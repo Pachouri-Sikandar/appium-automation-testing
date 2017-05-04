@@ -1,6 +1,9 @@
 # appium-automation-testing
 Understanding Appium
 
+## Note - I do not claim that this is my original work. This is just a compilation of the open source available information and tried to make it easier to understand and implement.
+
+
 ### What is Appium? and Why to use?
 * Appium is an open-source tool for automation testing for mobile applications. 
 * Appium can be used to test native, hybrid and mobile web applications on both Android and iOS platforms. 
