@@ -14,3 +14,20 @@ Understanding Appium
 
 #### Write tests in any language like Java, Ruby, Python, PHP etc. as per your convenience and use them to automate Android and iOS, isn't that sound cool !!
 
+### Installation Requirements :
+    Prerequisites or tools needed to complete the Appium installation.
+    1. Install JDK (prefer the latest one)
+    2. Get and install any IDE of your choice (Eclipse, IntelliJ IDEA, etc.)
+    3. Android SDK
+    4. Install Appium
+      
+Links to download the above tools / softwares - 
+1. JDK - http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html (choose your OS and the latest version of JDK to install)
+
+2. IntelliJ IDEA - http://www.jetbrains.com/idea/download/#section=linux (Choose your OS)
+
+3. Android SDK - https://developer.android.com/studio/index.html (Scroll to bottom and choose to download the sdk with respect to OS)
+
+##### Assuming the first 3 required installations are already done. As we are learning for Appium, lets start with installing Appium *
+
+
