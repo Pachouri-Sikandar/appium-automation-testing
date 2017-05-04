@@ -85,3 +85,21 @@ Scroll to the bottom and enter your paths in this way and save the file
     ** Don't forget to change the path **
 
 This is all we need to set up the Appium. We are ready to start with the Automation Process. 
+
+## Automation Using Appium
+
+We have a tool UI Automator Viewer which is helpful to inspect the application's UI.
+
+Uses of the UIAutomatorviewer : 
+
+    1. Easy to inspect the UI elements of the screen in an application.
+    2. Click on any element and get its complete information like the element is of which class, id given, the package name etc.
+   
+There could be many uses but for now we would be using it to get the package name and id of the element.
+
+How to use ? 
+
+    1. Open terminal
+    2. Navigate to the tools folder like we did to open SDK manager using (cd ankit/android-sdk-linux/tools)
+    3. Now enter-> uiautomatorviewer
+    4. For now to inspect on the tool. Open any app on your device and connect to your machine or open it on emulator.
