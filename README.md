@@ -52,6 +52,36 @@ Remember these are the installation commands for these softwares so please wait 
 
 Cheers!!   We are done with the appium installation.
 
+##### We are done with the basic installations, now we need to setup the tools to make them ready to be used by Appium. 
 
+Now, open SDK Manager. (Can be opened directly on Mac and Windows) 
+Let's say your sdk is installed in home -> ankit -> android-sdk-linux (please assume this throughout the tutorial). 
+Open terminal and move to android sdk folder using commands:
 
+    cd ankit
+    cd android-sdk-linux
+    cd tools
+    ./android
 
+This opens up the Android SDK Manager. 
+We need to make sure that we have installed the following -  
+1. Android SDK Tools
+2. Android SDK Platform Tools
+3. Android SDK Build Tools
+
+Now, lets set the Android Home Environment.
+
+Open terminal and enter the command
+
+    gedit .bashrc 
+
+This opens the bashrc file to configure the android home environment.
+
+Scroll to the bottom and enter your paths in this way and save the file 
+
+    export ANDROID_HOME=/home/ankit/android-sdk-linux
+    export PATH=$PATH:/home/ankit/android-sdk-linux/tools
+    export PATH=$PATH:/home/ankit/android-sdk-linux/platform-tools
+    ** Make sure to change the path **
+
+This is all we need to set up the Appium. We are ready to start with the Automation Process. 
