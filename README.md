@@ -82,6 +82,6 @@ Scroll to the bottom and enter your paths in this way and save the file
     export ANDROID_HOME=/home/ankit/android-sdk-linux
     export PATH=$PATH:/home/ankit/android-sdk-linux/tools
     export PATH=$PATH:/home/ankit/android-sdk-linux/platform-tools
-    ** Make sure to change the path **
+    ** Don't forget to change the path **
 
 This is all we need to set up the Appium. We are ready to start with the Automation Process. 
