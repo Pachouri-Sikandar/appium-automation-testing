@@ -14,6 +14,14 @@ Understanding Appium
 
 #### Write tests in any language like Java, Ruby, Python, PHP etc. as per your convenience and use them to automate Android and iOS, isn't that sound cool !!
 
+#### Limitations
+
+* No support for Android API level < 17 i.e. android version 4.2
+* No support for toast messages.
+* It doesn’t perform well on hybrid app testing, face difficulty in testing the switching action of application(From the web to native and vice-versa).
+* No support to run Appium Inspector on Microsoft Windows.
+* Sometimes, Appium Driver does not get connect easily.
+
 ### Installation Requirements :
     Prerequisites or tools needed to complete the Appium installation.
     1. Install JDK (prefer the latest one)
