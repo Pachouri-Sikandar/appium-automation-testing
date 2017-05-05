@@ -50,6 +50,9 @@ Remember these are the installation commands for these softwares so please wait 
     3. npm install wd               # get appium client
     4. appium &                     # start appium
 
+This is how terminal looks when appium is started.
+![Screenshot](appium_run.png)
+
 Cheers!!   We are done with the appium installation.
 
 ##### We are done with the basic installations, now we need to setup the tools to make them ready to be used by Appium. 
@@ -103,3 +106,15 @@ How to use ?
     2. Navigate to the tools folder like we did to open SDK manager using (cd ankit/android-sdk-linux/tools)
     3. Now enter-> uiautomatorviewer
     4. For now to inspect on the tool. Open any app on your device and connect to your machine or open it on emulator.
+
+* Terminal command to Open UIAUTOMATORVIEWER
+
+![Screenshot](UIautomatorviewer_open_command.png)
+
+* Default look of UIAUTOMATORVIEWER
+
+![Screenshot](UIautomatorviewer_default.png)
+
+* Sample Inspect on the WeatherApp (attached as WeatherApp.apk)
+
+![Screenshot](UIautomatorviewer_sample_inspect.png)
