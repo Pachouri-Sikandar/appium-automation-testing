@@ -173,4 +173,88 @@ Have a look at project folder architecture at the left of IDE.
 
     Download the WeatherApp.apk from my repository or use your app. Keep it in any directory.
     
-    Keep in mind to change the path while writing the path in test case and also to change the package name, ids of elements etc. related with your app.
+    Keep in mind to change the path while writing the path in test case and also to change the package name, ids of elements etc. related to your app.
+    
+    
+* Now, write your test case.
+
+
+#### You can find the Sample test case for entering text in edittext and clicking on button in the given sample.
+
+Sample code for reference:
+
+```
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+/**
+ * Created by ankit on 5/5/17.
+ */
+public class TestWeatherApp {
+
+    private AppiumDriver driver;
+
+    @Before
+    public void setUp() throws MalformedURLException {
+        //Building desiring capabilities. These are sent to the appium server to install the app on the particular device
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("deviceName", "Lenovo");  //Device name
+        capabilities.setCapability(CapabilityType.PLATFORM, "Android");   //Platform
+        capabilities.setCapability("platformVersion", "5.1.1");  // Android version
+        File file = new File("/home/ankit/IdeaProjects/testApks", "WeatherApp.apk"); //Apk path (don't forget to change the path)
+        capabilities.setCapability("app", file.getAbsolutePath());
+        capabilities.setCapability("appPackage", "com.weatherapp"); //package name
+        capabilities.setCapability("appActivity", "com.weatherapp.controller.activity.MainActivity"); //appActivity
+        driver = new AndroidDriver(new URL("http://127.0.1.1:4723/wd/hub"), capabilities); //initialising the AppiumDriver with host url and capabilities
+    }
+
+    @After
+    public void tearDown() {
+        driver.quit(); //quit the driver, after test completion
+    }
+
+    //Write your test here
+    @Test
+    public void testMethod() throws InterruptedException {
+        String appPackageName = "com.weatherapp";
+        String concatId = ":id/";
+        By editTextSearch = By.id(appPackageName + concatId + "editTextSearchCity");
+        By imageViewSearch = By.id(appPackageName + concatId + "imgSearch");
+        driver.findElement(editTextSearch).sendKeys("pune"); //enter Pune as string in the edit text
+        driver.findElement(imageViewSearch).click(); //click event on search image
+        Thread.sleep(5000); //hold for 5 seconds after the button is clicked, this is just to see the result
+    }
+
+}
+
+```
+Run the test - 
+
+    Select Run menu from the menu and within that select Run option
+    Or 
+    Right click in the class and select Run following with the class name (Ex. Run 'TestWeatherApp')
+    
+    
+And finally, we have written out first test successfully. 
+Cheeers !! 
+
+Hope you like the tutorial.
+
+
+### References 
+I pay my gratitude to the following websites and blogs, helped me to understand and learn Appium.
+
+1. https://www.youtube.com/watch?v=nLZigIv82cA
+2. https://nishantverma.gitbooks.io/appium-for-android/appium/why_appium.html
+
