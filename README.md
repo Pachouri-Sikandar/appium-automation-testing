@@ -170,3 +170,7 @@ Have a look at project folder architecture at the left of IDE.
 3. Enter the desired name of class and click Ok
 
 ![Screenshot](project_3.png)
+
+    Download the WeatherApp.apk from my repository or use your app. Keep it in any directory.
+    
+    Keep in mind to change the path while writing the path in test case and also to change the package name, ids of elements etc. related with your app.
