@@ -3,6 +3,7 @@ import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -39,6 +40,12 @@ public class TestWeatherApp {
     //Write your test here
     @Test
     public void testMethod() throws InterruptedException {
-
+        String appPackageName = "com.weatherapp";
+        String concatId = ":id/";
+        By editTextSearch = By.id(appPackageName + concatId + "editTextSearchCity");
+        By imageViewSearch = By.id(appPackageName + concatId + "imgSearch");
+        driver.findElement(editTextSearch).sendKeys("pune"); //enter Pune as string in the edit text
+        driver.findElement(imageViewSearch).click(); //click event on search image
+        Thread.sleep(5000); //hold for 5 seconds after the button is clicked, this is just to see the result
     }
 }
