@@ -159,3 +159,14 @@ So, the Project has been created. Let's move further.
 3. Choose the jar files and click Ok for all the dialogs.
 
 ![Screenshot](project_2.png)
+
+
+
+* Now let's write our first test case :)
+
+Have a look at project folder architecture at the left of IDE.
+1. Go to src -> test -> java
+2. Right click on java folder and select New -> Java Class
+3. Enter the desired name of class and click Ok
+
+![Screenshot](project_3.png)
