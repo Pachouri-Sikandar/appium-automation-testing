@@ -118,3 +118,44 @@ How to use ?
 * Sample Inspect on the WeatherApp (attached as WeatherApp.apk)
 
 ![Screenshot](UIautomatorviewer_sample_inspect.png)
+
+
+#### Its time to Setup our First Project
+
+* Now, open IDE IntelliJ IDEA.
+
+1. Click Create New Project
+
+![Screenshot](intellij_1.png)
+
+2. Choose Maven, select the java version and click Next
+
+![Screenshot](intellij_2.png)
+
+3. Enter groupId and artifactId, whatever you wish to enter and click Next
+
+![Screenshot](intellij_3.png)
+
+4. Enter project name and choose project location and click Finish
+
+![Screenshot](intellij_4.png)
+
+So, the Project has been created. Let's move further.
+
+* We need two jar files to begin with writing our first test case.
+
+1. Selenium Standalone Server: link to download - http://www.seleniumhq.org/download/
+2. Java - Clinet: link to download - https://mvnrepository.com/artifact/io.appium/java-client (Download the latest and stable version)
+
+* Once you download these files, we have to add these jar files to our project as dependency to use its classes and methods to write the tests.
+
+* Steps to add jar files:
+
+1. Click File and go to Project Structure
+2. Tap on Libraries section and click on "+" button and choose Java.
+
+![Screenshot](project_1.png)
+
+3. Choose the jar files and click Ok for all the dialogs.
+
+![Screenshot](project_2.png)
