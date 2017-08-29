@@ -22,6 +22,8 @@ public class TestWeatherApp {
     public void setUp() throws MalformedURLException {
         //Building desiring capabilities. These are sent to the appium server to install the app on the particular device
         DesiredCapabilities capabilities = new DesiredCapabilities();
+
+        //uncomment below code if you do not wish to use TestObject
         capabilities.setCapability("deviceName", "Lenovo");  //Device name
         capabilities.setCapability(CapabilityType.PLATFORM, "Android");   //Platform
         capabilities.setCapability("platformVersion", "5.1.1");  // Android version
@@ -30,6 +32,17 @@ public class TestWeatherApp {
         capabilities.setCapability("appPackage", "com.weatherapp"); //package name
         capabilities.setCapability("appActivity", "com.weatherapp.controller.activity.MainActivity"); //appActivity
         driver = new AndroidDriver(new URL("http://127.0.1.1:4723/wd/hub"), capabilities); //initialising the AppiumDriver with host url and capabilities
+
+
+        //To use TestObject
+        /*
+        capabilities.setCapability("appPackage", "com.weatherapp"); //package name
+        capabilities.setCapability("appActivity", "com.weatherapp.controller.activity.MainActivity"); //appActivity
+        capabilities.setCapability("testobject_api_key", TEST_OBJECT_API_KEY);
+        capabilities.setCapability("testobject_device", TEST_OBJECT_DEVICE);
+        driver = new AndroidDriver(new URL("http://appium.testobject.com/wd/hub"), capabilities); //initialising the AppiumDriver with host url and capabilities
+        */
+
     }
 
     @After
